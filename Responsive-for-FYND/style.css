@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: green;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-theme {
+    background-color: black;
+}
+
+/* Estilo do botão */
+button {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    /* Mesmo fundo do header */
+    color: green;
+    /* Mesmo verde das opções do header */
+    border: 2px solid green;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo ao passar o mouse no botão */
+button:hover {
+    background-color: green;
+    /* Cor de fundo verde ao passar o mouse */
+    color: white;
+    /* Texto branco ao passar o mouse */
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px whitesmoke;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: green;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        padding: 40px;
+    }
+}
